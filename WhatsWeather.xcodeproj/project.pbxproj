@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A291C202102F7DF009114E3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A291C1F2102F7DF009114E3 /* WeatherViewController.swift */; };
+		1A63DEA021030A0600B0D906 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A63DE9F21030A0600B0D906 /* WeatherDataModel.swift */; };
 		1A71AD632102E407003DFEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71AD622102E407003DFEC3 /* AppDelegate.swift */; };
 		1A71AD682102E407003DFEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A71AD662102E407003DFEC3 /* Main.storyboard */; };
 		1A71AD6A2102E408003DFEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A71AD692102E408003DFEC3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		1A291C1F2102F7DF009114E3 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		1A63DE9F21030A0600B0D906 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		1A71AD5F2102E407003DFEC3 /* WhatsWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A71AD622102E407003DFEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A71AD672102E407003DFEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				1A291C1F2102F7DF009114E3 /* WeatherViewController.swift */,
+				1A63DE9F21030A0600B0D906 /* WeatherDataModel.swift */,
 				1A71AD622102E407003DFEC3 /* AppDelegate.swift */,
 				1A71AD662102E407003DFEC3 /* Main.storyboard */,
 				1A71AD692102E408003DFEC3 /* Assets.xcassets */,
@@ -165,11 +168,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhatsWeather/Pods-WhatsWeather-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +209,7 @@
 			files = (
 				1A71AD632102E407003DFEC3 /* AppDelegate.swift in Sources */,
 				1A291C202102F7DF009114E3 /* WeatherViewController.swift in Sources */,
+				1A63DEA021030A0600B0D906 /* WeatherDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
